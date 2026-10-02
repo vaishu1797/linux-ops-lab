@@ -1,0 +1,90 @@
+1. System Monitoring:
+
+ Command:
+    top
+ What it does:
+    Shows running processes and system resource usage in real time.
+ What I learned:
+     I can use it to check CPU and memory usage and see which processes are using system resources.
+
+ Command:
+    free -h
+ What it does:
+    Shows information about RAM and swap memory.
+ What I learned:
+    It helps me check how much memory is being used and how much is available.
+
+ Command:
+    df -h
+ What it does:
+    Shows the used and available disk space on mounted filesystems.
+ What I learned:
+
+ It helps me check whether a filesystem is running out of disk space.
+
+ Command:
+    du -sh /var/ *
+ What it does:
+      Shows how much disk space files and directories are using.
+ What I learned: 
+      It can help identify which directories are taking up more disk space.
+
+ Command:
+    vmstat
+ What it does:
+    Shows information about processes, memory, CPU, and system activity.
+ What I learned:
+    It gives a quick overview of system resource usage.
+
+
+2. Services :
+
+
+ Command:
+     systemctl status ssh
+ What it does:
+     Shows the current status of the SSH service.
+ What I learned:
+     I can use it to check whether a service is running, stopped, or has encountered a problem.
+
+Command:
+    systemctl is-enabled ssh
+What it does:
+    Checks whether the SSH service is configured to start automatically when the system boots.
+What I learned:
+    It helps me check whether a service is enabled to start at boot.
+
+Command:
+    sudo systemctl start <service>
+What it does:
+    Starts a service.
+What I learned:
+    I can use it when a required service is currently stopped.
+
+Command:
+    sudo systemctl stop <service>
+What it does:
+    Stops a running service.
+What I learned:
+    It can be used when a service needs to be stopped.
+
+Command:
+    sudo systemctl restart <service>
+What it does:
+    Stops and starts a service again.
+What I learned:
+    Restarting a service can be useful after making configuration changes or when troubleshooting a service.
+
+Command:
+     systemctl list-units --type=service
+What it does:
+     Lists currently loaded service units.
+What I learned:
+     It helps me see the services managed by systemd.
+
+Command:
+     journalctl -u ssh
+What it does:
+     Shows logs related to the SSH service.
+What I learned:
+     I can use service logs to investigate problems when a service is not working as expected.
