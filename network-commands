@@ -1,0 +1,48 @@
+Linux Operations Lab
+This is my hands-on Linux practice lab.
+I am using Ubuntu to practice basic Linux commands, networking, system monitoring, troubleshooting, and other operations-related tasks.
+
+Network Commands:
+
+1. Check IP Address
+   Command:
+       ip address
+   What it does:
+       Shows the network interfaces and the IP addresses assigned to them.
+   What I learned:
+        lo is the loopback interface.
+        wlp2s0 is my Wi-Fi interface.
+        The inet value shows the IP address.
+
+2. Check Network Interfaces
+   Command:
+       ip link
+   What it does:
+       Shows the available network interfaces and their status.
+   What I learned:
+       UP means the interface is enabled.
+       LOWER_UP means the network link is active.
+       lo is the loopback interface.
+
+4. Check Routing
+Command:
+ip route
+What it does:
+
+Shows how Linux routes network traffic.
+What I learned:
+default via shows the default gateway.
+dev shows the network interface used for the route.
+
+4. Test Network Connectivity
+Command:
+ping 8.8.8.8
+What it does:
+
+Tests whether my system can reach the IP address 8.8.8.8.
+
+What I learned:
+ping uses ICMP to check network connectivity. If I receive replies, the destination is reachable.
+
+Note:
+I am learning these commands by running them on my Ubuntu system, checking the output, and documenting what I understand from each command.
