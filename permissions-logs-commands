@@ -1,0 +1,101 @@
+Linux Operations Lab
+      This is my hands-on Linux practice lab. I am using Ubuntu to practice basic Linux commands, users and permissions, processes, logs, networking, and troubleshooting.
+
+1. Users and Permissions
+      
+      Command: whoami
+      What it does: Shows the username of the current user.
+      What I learned:  
+            It helps me check which user I am currently logged in as.
+
+      Command: id
+      What it does: Shows the user ID, group ID, and groups of the current user.
+      What I learned: 
+            It helps me understand the identity and group memberships of a user.
+
+      Command: ls -l
+      What it does: Shows files with their permissions, owner, group, size, and other details.
+      What I learned: 
+            I can use it to check who owns a file and what permissions are assigned.
+
+      Command: chmod 755 script.sh
+      What it does: Changes the permissions of a file.
+      What I learned: 
+            Linux permissions control whether a user can read, write, or execute a file.
+
+      Command: sudo chown user:user file.txt
+      What it does: Changes the owner and group of a file.
+      What I learned:
+             It is useful when a file has the wrong ownership.
+
+      Command: sudo <command>
+      What it does: Runs a command with elevated privileges.
+      What I learned:
+            Some administrative operations require root privileges.
+
+2. Processes
+
+      Command: ps aux
+      What it does: Shows running processes on the system.
+      What I learned:
+            It helps me see which processes are running and their CPU and memory usage.
+
+      Command: ps aux | grep <process>
+      What it does: Searches the process list for a particular process.
+      What I learned:
+            This can be useful when checking whether a specific application or process is running.
+
+      Command: top
+      What it does: Displays running processes and system resource usage in real time.
+      What I learned:
+            I can use it to check CPU and memory usage and identify resource-heavy processes.
+
+      Command: kill <PID>
+      What it does: Sends a signal to a process using its process ID (PID).
+      What I learned:
+            It can be used to stop a process when necessary.
+
+      Command: pgrep <process>
+      What it does: Finds the PID of a process by its name.
+      What I learned:
+            It is useful when I need to find the PID before working with a process.
+
+3. Logs
+
+      Command: ls /var/log
+      What it does: Lists the log files and directories under /var/log.
+      What I learned:
+            Linux stores many system and application logs under /var/log.
+
+      Command: tail /var/log/syslog
+      What it does: Shows the last lines of the system log.
+      What I learned:
+             It is useful for checking recent log messages.
+
+      Command: tail -n 20 /var/log/syslog
+      What it does: Shows the last 20 lines of the log file.
+      What I learned:
+            I can use it when I want to quickly check the most recent log entries.
+
+      Command: grep -i "error" /var/log/syslog
+      What it does: Searches the log for messages containing error.
+      What I learned:
+            grep is useful for finding specific messages when troubleshooting.
+
+      Command: journalctl
+      What it does: Displays logs collected by the systemd journal.
+      What I learned:
+             It is useful for viewing system and service-related logs.
+
+      Command: journalctl -u <service>
+      What it does: Shows logs for a specific systemd service.
+      What I learned: I can use it to investigate problems with a particular service.
+
+      Command: journalctl -f
+      What it does: Displays new journal log entries as they are generated.
+      What I learned:
+            It is useful when monitoring logs in real time while troubleshooting.
+
+What I am practicing through this lab, I am learning how to:
+                Work with Linux users and permissions , Check file ownership and permissions , View and manage processes , Find processes using their names or PIDs , Read system and service logs
+and Use logs for basic troubleshooting.
