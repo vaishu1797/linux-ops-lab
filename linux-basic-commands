@@ -1,0 +1,135 @@
+Linux Basic Commands
+I practiced the following basic Linux commands on Ubuntu to understand files, directories, users, processes, system information, and basic system operations.
+
+1. Command:
+      pwd
+   What it does:
+      Shows the current working directory.
+   What I learned:
+      It tells me where I am currently located in the Linux filesystem.
+
+2. Command:
+       ls
+   What it does:
+       Lists the files and directories in the current directory.
+   What I learned:
+       I can use it to see what is present in a directory.
+
+3. Command:
+       ls -l
+   What it does:
+       Shows files and directories with detailed information.
+   What I learned:
+       The output includes permissions, owner, group, size, and modification time.
+
+4. Command:
+       cd /var/log
+   What it does:
+       Changes the current directory.
+   What I learned:
+       I can use cd to move between directories.
+
+5. Command:
+       mkdir test
+   What it does:
+       Creates a new directory.
+   What I learned:
+       It is used when I need to create a folder from the terminal.
+
+6. Command:
+       touch file.txt
+   What it does:
+       Creates a new empty file if the file does not already exist.
+   What I learned:
+       It is a simple way to create a file from the terminal.
+
+7. Command:
+       cp file.txt backup.txt
+   What it does:
+       Copies a file.
+   What I learned:
+       The original file remains, and a copy is created with the new name.
+
+8. Command:
+       mv file.txt /tmp/
+   What it does:
+       Moves a file or directory to another location.
+   What I learned:
+       mv can also be used to rename files.
+
+9. Command:
+       rm file.txt
+   What it does:
+       Removes a file.
+   What I learned:
+       I should be careful when using rm because the file can be deleted from the command line.
+
+10. Command:
+        cat file.txt
+    What it does:
+        Displays the contents of a file in the terminal.
+    What I learned:
+        It is useful for quickly viewing small text files.
+
+11. Command:
+        head file.txt
+    What it does:
+        Displays the beginning of a file.
+    What I learned:
+        It is useful when I only want to see the first few lines.
+
+12. Command:
+        tail file.txt
+    What it does:
+        Displays the end of a file.
+    What I learned:
+        It is useful for checking the latest lines of a file, especially log files.
+
+13. Command:
+        clear
+    What it does:
+        Clears the terminal screen.
+    What I learned:
+        It makes the terminal easier to read by removing the previous output from the screen.
+
+14. Command:
+        whoami
+    What it does:
+        Shows the username of the current user.
+    What I learned:
+        It helps me check which user I am currently logged in as.
+
+15. Command:
+        id
+    What it does:
+        Shows the current user's user ID, group ID, and group memberships.
+    What I learned:
+        It helps me understand the identity and group permissions of the current user.
+
+16. Command:
+        uname -a
+    What it does:
+        Displays detailed information about the Linux system and kernel.
+    What I learned:
+        It can show information such as the kernel version and system architecture.
+
+17. Command:
+        hostname
+    What it does:
+        Shows the hostname of the system.
+    What I learned:
+        The hostname identifies the computer on the network.
+
+18. Command:
+        history
+    What it does:
+        Shows previously executed commands.
+    What I learned:
+        It helps me review commands that I have already run in the terminal.
+
+19. Command:
+        sudo <command>
+    What it does:
+        Runs a command with elevated privileges when the current user is allowed to do so.
+    What I learned:
+        Some system operations require administrator privileges, so sudo can be used for those commands.
