@@ -1,0 +1,93 @@
+Troubleshooting:
+      I practiced some basic commands that can help identify common Linux and application problems.
+
+1. Check if a Service is Running
+   Command:
+          systemctl status <service>
+   What it does:
+          Shows the current status of a service.
+   What I learned:
+          I can use this as one of the first checks when a service is not working.
+
+2. Check Running Processes
+   Command:
+          ps -ef | grep <process>
+   What it does:
+          Searches for a particular process in the list of running processes.
+   What I learned:
+          It helps me check whether an application or process is running.
+
+3. Check Port
+   Command:
+          ss -lntp | grep 8080
+   What it does:
+          Checks whether something is listening on port 8080.
+   What I learned:
+          If an application is expected to use port 8080, this command can help me check whether the port is listening.
+
+4. Test Local Application
+   Command:
+          curl localhost:8080
+   What it does:
+          Sends a request to an application running on port 8080 on the local machine.
+   What I learned:
+          It can help me check whether a local web application is responding.
+
+5. Check Disk Space
+   Command:
+          df -h
+   What it does:
+          Shows the available and used disk space.
+   What I learned:
+          Low disk space can cause applications and services to behave unexpectedly, so I can check disk usage during troubleshooting.
+
+6. Check Memory
+  Command:
+          free -h
+  What it does:
+          Shows RAM and swap usage.
+  What I learned:
+          I can check memory usage when an application is slow or a system is running out of memory.
+
+7. Check Logs
+   Command:
+          journalctl -u <service>
+   What it does:
+          Shows logs for a specific service.
+   What I learned:
+          Logs can provide useful information about errors or problems with a service.
+
+8. Check Recent Log Entries
+   Command:
+          tail -n 20 /var/log/syslog
+   What it does:
+          Shows the last 20 lines of the system log.
+   What I learned:
+          I can use recent log entries to look for errors or events that happened recently.
+
+9. Check Network Connectivity
+   Command:
+          ping 8.8.8.8
+   What it does:
+          Tests connectivity to a public IP address.
+   What I learned:
+          It helps me check whether my system can reach an external network address.
+
+10. Check DNS
+    Command:
+            nslookup google.com
+    What it does:
+            Queries DNS to find the IP address associated with a domain name.
+    What I learned:
+            It helps me check whether DNS name resolution is working.
+
+Basic Troubleshooting Approach: 
+
+When an application or service is not working, I can start with simple checks:
+      1.Check whether the service is running.
+      2.Check whether the process is running.
+      3.Check whether the expected port is listening.
+      4.Check the application or system logs.
+      5.Check CPU, memory, and disk usage.
+      6.Check network connectivity.
+      7.Check DNS if the problem involves a hostname.
